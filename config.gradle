@@ -1,0 +1,47 @@
+ext {
+    plugins = [
+            application: 'com.android.application',
+            library    : 'com.android.library',
+            maven      : 'com.github.dcendents.android-maven',
+            bintray    : 'com.jfrog.bintray'
+    ]
+
+    android = [
+            applicationId    : "com.halohoop.transitivetest",
+            compileSdkVersion: 27,
+            buildToolsVersion: "27.0.3",
+            minSdkVersion    : 14,
+            targetSdkVersion : 27,
+            versionCode      : 105,
+            versionName      : "1.0.0"
+    ]
+
+    bintray = [
+            version       : "1.0.0",
+
+            siteUrl       : 'https://github.com/halohoop/LibraryTransitiveTest',
+            gitUrl        : 'git@github.com:halohoop/LibraryTransitiveTest.git',
+
+            group         : "com.halohoop",
+
+            packaging     : 'aar',
+            name          : 'LibraryTransitiveTest',
+            description   : 'LibraryTransitiveTest for Android',
+
+            licenseName   : 'The Apache Software License, Version 2.0',
+            licenseUrl    : 'http://www.apache.org/licenses/LICENSE-2.0.txt',
+
+            developerId   : 'halohoop',
+            developerName : 'halohoop',
+            developerEmail: 'halohoop@163.com',
+
+            binrayLibrary : "librarytransitivetest",
+            bintrayRepo   : "maven",
+            bintrayUser   : 'halohoop',
+            bintrayLicense: "Apache-2.0"
+    ]
+
+    dependencies = [
+            permission: 'com.halohoop:librarytransitivetest:1.0.0'
+    ]
+}
